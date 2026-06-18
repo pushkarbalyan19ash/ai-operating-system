@@ -72,14 +72,6 @@ services:
       - ollama_data:/root/.ollama
     networks:
       - nexus_network
-    # Uncomment to use GPU
-    # deploy:
-    #   resources:
-    #     reservations:
-    #       devices:
-    #         - driver: nvidia
-    #           count: 1
-    #           capabilities: [gpu]
 
   # Next.js Frontend (Development)
   frontend:
